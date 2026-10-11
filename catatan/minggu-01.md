@@ -28,6 +28,16 @@ Kendala yang saya alami adalah saat melakukan setup Maven karena perintah `mvn` 
 
 Saya menyesuaikan kode yang diberikan dengan struktur kode dari dosen dan tidak mengubah nama class maupun method karena sudah digunakan pada file pengujian. Saya juga menyesuaikan isi data mahasiswa dengan identitas saya sendiri.
 
-**Satu hal yang saya pahami lebih baik sekarang:**
+## Kelebihan dan Keterbatasan Tiap Gaya
 
-Saya memahami bahwa satu masalah dapat dibuat menggunakan beberapa paradigma pemrograman. Prosedural lebih fokus pada fungsi dan langkah kerja, OOP menggunakan objek untuk mengatur data dan perilaku, sedangkan fungsional menggunakan fungsi sebagai nilai.
+- **Prosedural**
+  1. Kelebihan: Mudah dibuat untuk program sederhana.
+  2. Keterbatasan: Sulit dikelola jika program semakin besar.
+
+- **OOP**
+  1. Kelebihan: Program lebih rapi karena data dan fungsi dikelompokkan dalam class.
+  2. Keterbatasan: Membutuhkan lebih banyak class dan konsep.
+
+- **Fungsional**
+  1. Kelebihan: Fungsi dapat digunakan kembali dan kode lebih ringkas.
+  2. Keterbatasan: Konsep lambda masih cukup sulit dipahami bagi pemula.
