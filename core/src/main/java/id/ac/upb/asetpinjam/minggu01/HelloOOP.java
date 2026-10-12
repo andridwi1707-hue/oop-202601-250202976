@@ -15,7 +15,7 @@ public class HelloOOP {
 
     /** TODO minggu 1: sapaan memuat "Aset-Pinjam", nama, dan NIM. */
     public String sapa() {
-        return "Hello " + nama + " (" + nim + ") Selamat Datang!";
+        return "Hello Aset-Pinjam, " + nama + " (" + nim + ") Selamat datang";
     }
 
     public static void main(String[] args) {
