@@ -28,6 +28,10 @@ Kendala yang saya alami adalah saat melakukan setup Maven karena perintah `mvn` 
 
 Saya menyesuaikan kode yang diberikan dengan struktur kode dari dosen dan tidak mengubah nama class maupun method karena sudah digunakan pada file pengujian. Saya juga menyesuaikan isi data mahasiswa dengan identitas saya sendiri.
 
+**Satu hal yang saya pahami lebih baik sekarang:**
+
+Saya memahami bahwa satu masalah dapat dibuat menggunakan beberapa paradigma pemrograman. Prosedural lebih fokus pada fungsi dan langkah kerja, OOP menggunakan objek untuk mengatur data dan perilaku, sedangkan fungsional menggunakan fungsi sebagai nilai
+
 ## Kelebihan dan Keterbatasan Tiap Gaya
 
 - **Prosedural**
