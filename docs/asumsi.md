@@ -25,6 +25,14 @@ Salin setiap pertanyaan ambigu (nomor 1 sampai 7) ke sini dan jawab. Contoh:
 - Dampak ke kode: (isi)
 - Tes yang membuktikan: (isi)
 
+## A-02: Rumus denda progresif
+
+- Pertanyaan: Bagaimana rumus denda progresif yang digunakan?
+- Keputusan: Denda progresif dihitung dengan rumus `denda flat + (hari terlambat × hari terlambat)`.
+- Alasan: Rumus ini membuat denda progresif tidak lebih murah dari denda flat, nilainya selalu bertambah ketika hari keterlambatan bertambah, dan pada hari ke-30 nilainya lebih besar daripada denda flat.
+- Dampak ke kode: `DendaProgresif.hitung()`
+- Tes yang membuktikan: `Minggu05AbstraksiTest`
+
 ## Asumsi lain
 
 Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubahan skema database, format error API, dan seterusnya.
