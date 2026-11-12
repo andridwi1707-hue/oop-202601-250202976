@@ -38,22 +38,40 @@ public class JadwalPeminjaman {
      * Definisi "bentrok" di batas waktu (selesai sama dengan mulai) adalah KEPUTUSAN ANDA (docs/asumsi.md).
      */
     public boolean bentrok(Peminjaman baru) {
-        throw new UnsupportedOperationException("TODO minggu 7: bentrok");
+       for (Peminjaman p : daftar){
+        if (!p.getAset().getKode().equals(baru.getAset().getKode())){
+       continue ;}
+        if (baru.getMulai().isBefore(p.getSelesai())
+            && baru.getSelesai().isAfter(p.getMulai())) {
+        return true;
+            }
+        }
+        return false;
     }
+   
 
     /** TODO minggu 7: semua peminjaman, diurutkan menurut waktu mulai (gunakan Comparator). */
     public List<Peminjaman> semuaUrutMulai() {
-        throw new UnsupportedOperationException("TODO minggu 7: semuaUrutMulai");
+        List<Peminjaman> hasil = new ArrayList<>(daftar);
+        hasil.sort(java.util.Comparator.comparing(Peminjaman::getMulai));
+        return hasil;
     }
 
     /** TODO minggu 7: peminjaman dikelompokkan menurut kode aset. */
     public Map<String, List<Peminjaman>> perAset() {
-        throw new UnsupportedOperationException("TODO minggu 7: perAset");
+           Map<String, List<Peminjaman>> hasil = new java.util.HashMap<>();
+
+    for (Peminjaman p : daftar) {
+        String kode = p.getAset().getKode();
+
+        hasil.computeIfAbsent(kode, k -> new ArrayList<>()).add(p);
+    }
+    return hasil;
     }
 
     /** TODO minggu 7: hapus peminjaman berdasarkan id. True jika ada yang terhapus. */
     public boolean hapus(String id) {
-        throw new UnsupportedOperationException("TODO minggu 7: hapus");
+         return daftar.removeIf(p -> p.getId().equals(id));
     }
 
     /**
